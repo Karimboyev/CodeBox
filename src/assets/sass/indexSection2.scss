@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "SF-Pro-Display-Black";
+    src: url("../fonts/SF-Pro-Display-Black.otf") format('truetype');
+  }
+  @font-face {
+    font-family: "bold";
+    src: url("../fonts/SF-Pro-Display-Bold.otf") format('truetype');
+  }
+  #section2H1{
+      font-family: SF-Pro-Display-Black;
+  }
+.section2Grid{
+    font-family: bold;
+    display: grid;
+    grid-template-areas: 
+    'firstImg firstText'
+    'secondText secondImg'
+    'thirdImg thirdText';
+    margin-bottom: 150px;
+    #firstImg{
+        margin: 0 auto;
+        grid-area: firstImg;
+    }
+    #firstText{
+        margin: 0 auto;
+        padding-top: 100px;
+        grid-area: firstText;
+    }
+    #secondText{
+        margin: 0 auto;
+        padding-top: 100px;
+        margin-bottom: 50px;
+        grid-area: secondText;
+    }
+    #secondImg{
+        margin: 0 auto;
+        height: 285px;
+        grid-area: secondImg;
+    }
+    #thirdText{
+        margin: 0 auto;
+        padding-top: 60px;
+        grid-area: thirdText;
+    }
+    #thirdImg{
+        margin: 0 auto;
+        grid-area: thirdImg;
+    }
+}
+h1{
+    margin-bottom: 80px;
+}
+@media (max-width: 992px){
+    .section2Grid{
+        text-align: center;
+        display: block;
+        #firstText{
+            padding-top: 0;
+        }
+        #secondText{
+            padding-top: 0;
+        }
+        #thirdText{
+            padding-top: 0;
+        }
+    }
+}

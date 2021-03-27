@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "SF-Pro-Display-Black";
+    src: url("../fonts/SF-Pro-Display-Black.otf") format('truetype');
+  }
+  @font-face {
+    font-family: "regular";
+    src: url("../fonts/FontsFree-Net-SFProDisplay-Regular.ttf") format('truetype');
+  }
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 170px;
+    .col{
+        .cardSection5{
+            background-color: #fff;
+            border-radius: 4px;
+            font-size: 14px;
+            text-align: center;
+            min-height: 450px;
+            transition: transform .2s;
+            &:hover{
+                transform: scale(1.1); 
+                -webkit-box-shadow: 0px 21px 35px -7px rgba(0,0,0,0.6); 
+                box-shadow: 0px 21px 35px -7px rgba(0,0,0,0.6);
+                footer{
+                    button{
+                        background-color: #1DD1A1;
+                        color: #fff;
+                    }
+                }
+            }
+            header{
+                .coursName{
+                    margin-bottom: 40px;
+                }
+                padding: 32px 32px 17px 32px;
+                span{
+                    color: #ababab;
+                }
+            }
+            main{
+                padding: 10px 32px 32px 32px;
+            }
+            footer{
+                button{
+                    margin-top: 10px;
+                    background-color: #fff;
+                    color: #1DD1A1;
+                    width: 160px;
+                }
+            }
+            h1{
+                font-size: 30px;
+                color: #343434;
+                margin: 0;
+                padding: 0;
+            }
+            h4{
+                font-size: 16px;
+                font-family: SF-Pro-Display-Black;
+                color: #343434;
+            }
+            p{
+                font-size: 16px;
+                font-family: regular;
+                line-height: 19px;
+                color: #343434;
+                margin: 0;
+                padding: 0;
+            }
+            
+        }
+    }
+}
+@media (max-width:1200px) and (min-width:992px){
+    .indexSection5{
+        .row{
+            .col{
+                .cardSection5{
+                    h1{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

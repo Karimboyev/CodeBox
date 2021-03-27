@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "SF-Pro-Display-Regular";
+    src: url("../fonts/SF-Pro-Display-Regular.otf") format('truetype');
+  }
+.usersSection2{
+    margin: 50px 0;
+    &>h1{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .userCourses{
+        display: flex;
+        flex-direction: row;
+        .col{
+            .card{
+                cursor: pointer;
+                width: 31.5%;
+                height: 350px;
+                display: flex;
+                span{
+                    display: block;
+                    margin: auto;
+                    font-size: 20px;
+                    font-family: SF-Pro-Display-Regular;
+                }
+            }
+        }
+    }
+}
+.modalAddCourse{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    position: fixed;
+    z-index: 5;
+    padding-top: 100px ;
+    background-color: rgba(0,0,0,0.4);
+    overflow: hidden;
+    .close {
+        color: #000;
+        font-size: 40px;
+        font-weight: bold;
+        height: 40px;
+      }
+    .close:hover,
+    .close:focus {
+        color: #aaaaaa;
+        text-decoration: none;
+        cursor: pointer;
+    }    
+}

@@ -1,7 +1,7 @@
 {
   "name": "codebox",
   "version": "0.1.0",
-  "homepage": "http://gitname.github.io/codebox",
+  "homepage": "http://Karimboyev.github.io/codebox",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",

@@ -48,7 +48,7 @@ class ChangePage extends Component{
                     <Route path="/codebox/logon">
                         <Register changeName={this.changeName}  addUser={this.addUser} users={this.state.users} />
                     </Route>
-                    <Route path="/">
+                    <Route path="/codebox">
                         <Home changePath={this.changePath} />
                     </Route>
                     

@@ -42,13 +42,13 @@ class ChangePage extends Component{
             <Router>
                 <Switch>
                 <Route
-                    path="/codebox/:name/:id/Cabinet"
+                    path="/:name/:id/Cabinet"
                     render={({ match }) => <Users name={match.params.name} users={this.state.users[match.params.id]} />}
                 />
-                    <Route path="/codebox/logon">
+                    <Route path="/logon">
                         <Register changeName={this.changeName}  addUser={this.addUser} users={this.state.users} />
                     </Route>
-                    <Route path="/codebox">
+                    <Route path="/">
                         <Home changePath={this.changePath} />
                     </Route>
                     
